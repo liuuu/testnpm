@@ -1,0 +1,31 @@
+{
+  "name": "testnpm",
+  "version": "1.0.0",
+  "description": "test npm",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "build": "babel src -d build",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuuu/testnpm.git"
+  },
+  "keywords": ["test", "learn"],
+  "author": "liuyuu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuuu/testnpm/issues"
+  },
+  "homepage": "https://github.com/liuuu/testnpm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "watch": "^1.0.2"
+  }
+}
